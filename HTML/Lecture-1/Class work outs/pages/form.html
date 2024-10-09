@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Form</title>
+  </head>
+  <body>
+    <h1>Please schedule your trip!</h1>
+    <form action="./success.html" method="post" target="_blank">
+      <!-- the attribute for is used to associate the field name and box so that it will highlight the field -->
+      <label for="username">Username:</label>
+      <!-- the attribute name will be sending the collected data to backend like this, here name="username" so it will be:-> username:data received from the user as the input -->
+      <input
+        type="text"
+        id="username"
+        required
+        name="username"
+        placeholder="first name only"
+        size="30"
+        autocomplete="username"
+      />
+      <br />
+      <br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        minlength="6"
+        maxlength="8"
+        size="30"
+        placeholder="please enter your password"
+        autocomplete="current-password"
+      />
+      <br /><br />
+      <input type="submit" />
+
+
+      <br><br>
+      <br><br><br>
+
+      <!-- input & button tags -->
+      <!-- <h4>using input tag</h4>
+      <input type="Submit">
+      <input type="reset">
+      <input type="button" value="Click Me!">
+
+      <h4>using button tag</h4>
+      <button type="submit">Any text on button</button>
+       <button type="reset">Reset</button>
+       <button type="button">Click</button>
+       <button type="menu">Menu</button> -->
+    </form>
+  </body>
+</html>
