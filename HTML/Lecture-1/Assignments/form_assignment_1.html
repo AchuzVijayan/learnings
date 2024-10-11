@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - I</title>
+</head>
+<body>
+    <h1>Please fill the following details</h1>
+    <form action="../../Lecture-1/Class work outs/pages/success.html" method="get" target="_parent">
+        <label for="name">First Name:</label>
+        <input type="text" autocomplete="name" id="name" size="30" required placeholder="First Name">
+        <br>
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" size="30" required placeholder="Phone number">
+        <br>
+        <label for="dob">DOB:</label>
+        <input type="month" id="dob" required>
+        <br>
+        <label for="age">Age:</label>   
+        <input type="number" id="age" size="3" required placeholder="age" min="1" max="120">
+        <br>
+        <label for="gender">Gender:</label>
+         <select name="gender" id="gender" required>
+            <option value="female">Female</option>
+            <option value="male" selected>Male</option>
+            <option value="non-binary">Non-binary</option>
+            <option value="others">Others</option>
+         </select>
+         <br>
+         <label for="profile-pic">Profile Picture:</label>
+         <input type="file" accept="image/jpeg, image/png" capture="camera" multiple required>
+         <br>
+         <button type="submit">Submit</button>
+         <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>
