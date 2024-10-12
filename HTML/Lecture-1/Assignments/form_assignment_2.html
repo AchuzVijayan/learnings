@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - II</title>
+</head>
+<body>
+    <form action="../Class work outs/pages/success.html" method="get" target="_self">
+        <caption><h1>Please Enter your Details</h1></caption>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="name" id="firstname" placeholder="Achuz" required>
+            <br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="name" id="lastname" placeholder="Vijayan" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="sreekash1997achu@gmail.com" size="30" required>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" required placeholder="27" size="2" min="1" max="100"> 
+            <br>
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female" selected>Female</option>
+                <option value="non-binary">Non-Binary</option>
+                <option value="others">Others</option>
+            </select>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Interests</legend>
+            <input type="checkbox" name="music" id="music" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" name="sports" id="sports" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" name="Reading" id="reading" value="reading">
+            <label for="reading">Reading</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Location</legend>
+            <label for="country">Country:</label>
+             <select name="country" id="country">
+                <option value="Norway">Norway</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Iceland">Iceland</option>
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Finland">Finland</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="united states" selected>United States</option>
+             </select>
+             <br>
+             <label for="city">City:</label>
+             <select name="city" id="city">
+                <option value="Oslo">Oslo</option>
+                <option value="Bergen">Bergen</option>
+                <option value="Trondheim">Trondheim</option>
+                <option value="Copenhagen">Copenhagen</option>
+                <option value="Aarhus">Aarhus</option>
+                <option value="Zürich">Zürich</option>
+                <option value="Reykjavík">Reykjavík</option>
+                <option value="Sydney">Sydney</option>
+                <option value="New york"selected >New York City</option>
+             </select>
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>Additional Information</legend>
+            <!-- textarea -->
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" placeholder="your comments go here." rows="4" cols="50"></textarea>
+            <br>
+            <!-- files -->
+             <label for="profilepic">Profile Picture</label>
+             <input type="file" accept="image/png, image/jepg" capture="camera" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Submit Options</legend>
+            <!-- radio button -->
+            <label for="submethod" >Preferred Submission Method:</label>
+
+            <input type="radio" id="submethod" name="submitradio" value="online" >
+            <label for="radioOnline">Online</label>
+
+            <input type="radio" id="submethod" name="submitradio" checked value="offline">
+            <label for="radioOffline">Offline</label>
+            <br>
+            <!-- check box -->
+             <label for="newsletter">Subscribe to Newsletter:</label>
+             <input type="checkbox" id="newsletter" value="yes" checked name="newsletter">
+
+        </fieldset>
+
+        <button type="submit" value="submit">Submit</button>
+        <button type="reset" value="reset">Reset</button>
+
+    </form>
+    
+</body>
+</html>
