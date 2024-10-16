@@ -1,0 +1,30 @@
+h2{
+    color: #1d3f58;
+  }
+
+  p{
+    color: #537692
+    ;
+  }
+
+  li{
+    color: cornflowerblue;
+  }
+/* end of type selectors ex. tags */
+
+
+  .rec-res{ 
+    /* EX OF CLASS SELECTOR */
+    color: darkgreen;
+  }
+
+  #top{
+    /* EX OF ID SELECTOR */
+    color: #a46379;
+  }
+
+
+  #des1{
+    color:red;
+  }
+

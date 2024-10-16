@@ -1,0 +1,19 @@
+#outer_div{
+    /* background-color: #30041cc2; */
+    width: 100vw;
+    height: 100vh;
+}
+
+#inner_div{
+    /* background-color: #0f0f0f;   */
+    font-size: 36px;
+    width: 50%;
+    height: 50%;
+}
+
+
+h1{
+    color: rgb(0,0,255);
+    /* text-shadow: 2px 2px 5px #008000; */
+
+}

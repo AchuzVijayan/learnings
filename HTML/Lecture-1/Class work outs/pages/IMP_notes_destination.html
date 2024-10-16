@@ -13,9 +13,22 @@
       type="image/icon"
       href="../../../../../Mutlimedia/favicon.ico"
     />
+    <!-- External Styling {-->
+     <link rel="Stylesheet" href="../styles/IMP_notes_styles.css" />
+    <!--} External Styling -->
+
+    <!-- Internal Styling {-->
+    <style>
+      h1{
+        color: #001b2e;
+      }
+    </style>
+    <!-- } Internal Styling-->
+
   </head>
   <body>
-    <header style="text-align: center">
+    <header style="text-align: center"> <!--Inline styling-->
+    <!-- <header> -->
       <div>
         <!-- h1 -->
         <h1 id="top">Welcome to the Paradise Island!</h1>
@@ -161,24 +174,24 @@
           <li>
             <b>Seafood haven</b>
             <ul>
-              <li>Fresh catch of the day</li>
-              <li>Oceanfront dining experience</li>
+              <li class="rec-res" id="des1">Fresh catch of the day</li>
+              <li class="rec-res">Oceanfront dining experience</li>
             </ul>
           </li>
 
           <li>
             <b>Tropical Bites</b>
             <ul>
-              <li>Local and international cuisine</li>
-              <li>Outdoor seating with panoramic views</li>
+              <li class="rec-res">Local and international cuisine</li>
+              <li class="rec-res">Outdoor seating with panoramic views</li>
             </ul>
           </li>
 
           <li>
             <b>Island Grill</b>
             <ul>
-              <li>Grilled specialties with island flavors</li>
-              <li>Lively atmosphere with live music</li>
+              <li class="rec-res">Grilled specialties with island flavors</li>
+              <li class="rec-res">Lively atmosphere with live music</li>
             </ul>
           </li>
         </ul>
@@ -277,9 +290,9 @@
       <!-- Location -->
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32710.116146252567!2d-77.34194224495188!3d25.083385046683393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x892f7db93cb9b50b%3A0x4f27a6bcae38f950!2sParadise%20Island!5e1!3m2!1sen!2sin!4v1728155819258!5m2!1sen!2sin"
-        width="600"
-        height="450"
-        style="border: 0"
+        width="50%"
+        height="300px"
+        style="border: 0px"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
@@ -287,10 +300,12 @@
     </article>
 
     <section>
+
+      <h2 id="wiki">Wikipedia</h2>
       <iframe
         src="https://en.wikipedia.org/wiki/Paradise_Island"
-        width="600"
-        height="450"
+        width="50%"
+        height="300px"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
@@ -299,6 +314,7 @@
     </section>
 
     <section>
+      <h2 id="youtube">Youtube</h2>
       <iframe
         width="560"
         height="315"
