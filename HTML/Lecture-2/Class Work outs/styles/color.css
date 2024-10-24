@@ -1,0 +1,42 @@
+#outer_div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#inner_div{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+
+   /* Method I specifying in different lines*/
+    /* border-width: 2px;
+    border-color: black;
+    border-style: solid; */
+
+    /* method II in one single line */
+    /* border: black solid 2px; */
+    
+    /* circular radius */
+    /* border-radius: 15px 40px 80px  100px; */
+
+    /* Elipse radius  : - 1st value will be X axis radius and second one Y axis and separated by / and, all corners are separated by spaces */
+    /*circle*/
+    /* border-radius: 20px;  */
+
+    /* elipse 20px-Xaxis; 60px-Yaxis */
+    /* border-radius: 20px/60px;     */
+  
+
+    /* for each corner different values single value only alowed means circle only in corners*/
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+
+    /* 2nd method for all corners */
+    /* border-radius: 20px 60px /30px 30px 30px 30px; */
+    border-radius: 20px 40px/20px 30px 5px 76px;
+
+
+}
