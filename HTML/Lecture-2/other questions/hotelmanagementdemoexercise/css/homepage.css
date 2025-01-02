@@ -59,3 +59,7 @@ input{
     border:1px solid #3498db;
     border-radius:5px;
 }
+
+.room{
+  display: inline-block;
+}

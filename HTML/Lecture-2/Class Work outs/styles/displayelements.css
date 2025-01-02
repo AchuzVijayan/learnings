@@ -1,0 +1,71 @@
+#div1{
+    width: 150px;
+    height: 50px;
+    /* the width and heights are not considered since the display: inline is given at last for these blocks */
+    text-align: center;
+    background-color: aqua;
+    border: 2px dashed black;
+    display: inline;
+    display: inline-block;
+}
+#div2{
+    margin-top: 2px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background-color:greenyellow;
+    border: 2px dashed black;
+    display: inline-block;
+}
+span{
+    display: block;
+}
+
+#divp1{
+    width:45%;
+    /* height: 140px; */
+    margin-right: 4px;
+    padding: 20px;
+    text-align: justify;
+    border: 2px dotted black;
+    background-color:  lightslategrey;
+    display: inline-block;
+    min-height: 110px;
+    min-width: 200px;
+}
+#divp2{
+    float:right;
+    /* vertical-align: top; */
+    width: 45%;
+    /* height: 140px; */
+    padding: 20px;
+    text-align: justify;
+    border: 2px dotted black;
+    background-color: darkcyan;
+    display: inline-block;
+    min-width: 200px;
+    min-height: 110px;
+}
+#paraI{
+    margin-top: 25px;
+    display: inline-block;
+    text-align: justify;
+    width: 45%;
+    margin-left: 4px;
+    margin-right: 4px;
+
+    min-width: 200px
+    
+
+}
+#paraII{
+    margin-top: 25px;
+    display: inline-block;
+    text-align: justify;
+    width: 45%;
+    margin-right: 4px;
+    margin-left: 4px;
+
+    vertical-align: top;
+    min-width: 200px
+}
