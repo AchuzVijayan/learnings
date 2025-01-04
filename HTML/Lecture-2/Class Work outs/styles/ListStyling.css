@@ -1,0 +1,12 @@
+.list1{
+    
+list-style-type: disclosure-open;
+list-style-position: inside;
+list-style-image: url('../../../../../Mutlimedia/favicon.ico');
+}
+.list2{
+    list-style-type: upper-roman;
+    /* list-style: lower-greek inside; */
+    list-style: url("../../../../../Mutlimedia/home.png") inside;
+
+}
