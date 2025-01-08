@@ -6,6 +6,19 @@ body {
   padding: 0px;
 }
 
+/* Give styling to navbar and links inside it below */
+nav{
+  background-color:#333;
+  padding:20px
+}
+
+a{
+  margin:0px 15px;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
 header {
   background-color: #3498db;
   color: white;
@@ -58,6 +71,7 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Style the second section with table below by giving appropriate classes to the elements */
