@@ -1,0 +1,66 @@
+body{
+    background-color: #333333;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("../../../../../../Mutlimedia/Library/library.jpg");
+    color: #FFFFFF;
+    text-align: center;
+}
+
+nav{
+    background-color: #333333;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    color: #FFFFFF;
+    padding: 0px 25px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+}
+
+.course_name{
+    background-color: #FFFFFF;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 7px 20px;
+    margin: 30px;
+    box-sizing: border-box;
+}
+h1{
+    padding: 20px;
+    padding-top: 15px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+h2{
+    color: #333333;
+}
+h3{
+    color: #636A71;
+}
+h5{
+    color: #27AE60;
+}
+table{
+    border-collapse: collapse;
+    margin: 0px auto;
+    width: 75%;
+    background-color: #494D5F;
+    padding: 20px;
+    margin-top: 10px;
+}
+th{
+    background-color: #A28089;
+    padding: 5px 20px;
+}
+td{
+    padding: 5px 30px;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid white;
+}
