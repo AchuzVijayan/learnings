@@ -28,7 +28,17 @@ h2{
     color:red;
   }
 
-  a{
+  #div_audio{
+    padding-top: 35px;
+  }
+
+
+  
+  /* combinators */
+
+  /* ------------------------------------------- */
+  /* descendant */
+ /* header a{
     outline: 2px solid #1d3f58;
     text-decoration: none;
     padding: 10px;
@@ -37,8 +47,74 @@ h2{
     background-color: #537692;
     border-radius:4px;
 
-  }
+  } */
 
-  #div_audio{
-    padding-top: 35px;
-  }
+/* Child Combinator */
+
+header > a{
+  outline: 2px solid #1d3f58;
+  text-decoration: none;
+  padding: 10px;
+  margin: 20px;
+  cursor: grab;
+  background-color: #537692;
+  border-radius:4px;
+
+}
+
+
+
+
+/* Subsequent sibling */
+
+h3 ~ p{
+  background-color: #a46379;
+}
+
+/* Next sibling */
+h3 + p{
+  background-color: aquamarine;
+}
+
+
+/* universal selector */
+/*
+
+*{
+  color: chocolate;
+}
+   */
+
+   
+   /* Attribute Selector */
+
+   a[title]{
+    color: aliceblue;
+   }
+
+   a[href="#NBA"]{
+    background-color: #a46379;
+   }
+
+   a[href*="#act"]{
+    background-color: #a46379;
+   }
+
+   a[href^="#act"]{
+    color: chartreuse;
+   }
+   a[href$=".html"]{
+    background-color: coral;
+   }
+
+   a[href^="https"]{
+    color: darkgreen;
+   }
+
+   a[href$=".com"]{
+    font-style: italic;
+   }
+
+   a[href^="https"][href$="ninjas/"]{
+    background-color: black;
+   }
