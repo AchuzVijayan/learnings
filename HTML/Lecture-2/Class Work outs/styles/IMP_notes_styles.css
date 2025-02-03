@@ -118,3 +118,25 @@ h3 + p{
    a[href^="https"][href$="ninjas/"]{
     background-color: black;
    }
+
+   p:first-child{
+    background-color: black;
+    border: 2px dotted white;
+   }
+
+   p:last-child{
+    background-color: black;
+   }
+
+   p:only-child{
+    border: 2px dotted white;
+    background-color: orange;
+   }
+
+   p:nth-child(n+1){
+    background-color: blue;
+   }
+
+   a:nth-child(n){
+    text-decoration: none;
+   }
