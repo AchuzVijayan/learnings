@@ -2,52 +2,52 @@ h2{
     color: #1d3f58;
   }
 
-  p{
-    color: #537692
-    ;
-  }
+p{
+  color: #537692
+  ;
+}
 
-  li{
-    color: cornflowerblue;
+li{
+  color: cornflowerblue;
   }
 /* end of type selectors ex. tags */
 
 
-  .rec-res{ 
-    /* EX OF CLASS SELECTOR */
-    color: darkgreen;
-  }
+.rec-res{ 
+  /* EX OF CLASS SELECTOR */
+  color: darkgreen;
+}
 
-  #top{
-    /* EX OF ID SELECTOR */
-    color: #a46379;
-  }
-
-
-  #des1{
-    color:red;
-  }
-
-  #div_audio{
-    padding-top: 35px;
-  }
+#top{
+  /* EX OF ID SELECTOR */
+  color: #a46379;
+}
 
 
-  
-  /* combinators */
+#des1{
+  color:red;
+}
 
-  /* ------------------------------------------- */
-  /* descendant */
- /* header a{
-    outline: 2px solid #1d3f58;
-    text-decoration: none;
-    padding: 10px;
-    margin: 20px;
-    cursor: grab;
-    background-color: #537692;
-    border-radius:4px;
+#div_audio{
+  padding-top: 35px;
+}
 
-  } */
+
+
+/* combinators */
+
+/* ------------------------------------------- */
+/* descendant */
+/* header a{
+  outline: 2px solid #1d3f58;
+  text-decoration: none;
+  padding: 10px;
+  margin: 20px;
+  cursor: grab;
+  background-color: #537692;
+  border-radius:4px;
+
+} */
 
 /* Child Combinator */
 
@@ -68,12 +68,12 @@ header > a{
 /* Subsequent sibling */
 
 h3 ~ p{
-  background-color: #a46379;
+  /* background-color: #a46379; */
 }
 
 /* Next sibling */
 h3 + p{
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 
@@ -83,60 +83,140 @@ h3 + p{
 *{
   color: chocolate;
 }
-   */
+*/
 
-   
-   /* Attribute Selector */
 
-   a[title]{
-    color: aliceblue;
-   }
+/* Attribute Selector */
 
-   a[href="#NBA"]{
-    background-color: #a46379;
-   }
+a[title]{
+color: aliceblue;
+}
 
-   a[href*="#act"]{
-    background-color: #a46379;
-   }
+a[href="#NBA"]{
+background-color: #a46379;
+}
 
-   a[href^="#act"]{
-    color: chartreuse;
-   }
-   a[href$=".html"]{
-    background-color: coral;
-   }
+a[href*="#act"]{
+background-color: #a46379;
+}
 
-   a[href^="https"]{
-    color: darkgreen;
-   }
+a[href^="#act"]{
+color: chartreuse;
+}
+a[href$=".html"]{
+background-color: coral;
+}
 
-   a[href$=".com"]{
-    font-style: italic;
-   }
+a[href^="https"]{
+color: darkgreen;
+}
 
-   a[href^="https"][href$="ninjas/"]{
-    background-color: black;
-   }
+a[href$=".com"]{
+font-style: italic;
+}
 
-   p:first-child{
-    background-color: black;
-    border: 2px dotted white;
-   }
+a[href^="https"][href$="ninjas/"]{
+background-color: black;
+}
 
-   p:last-child{
-    background-color: black;
-   }
+p:first-child{
+background-color: black;
+border: 2px dotted white;
+}
 
-   p:only-child{
-    border: 2px dotted white;
-    background-color: orange;
-   }
+p:last-child{
+/* background-color: black; */
+}
 
-   p:nth-child(n+1){
-    background-color: blue;
-   }
+p:only-child{
+border: 2px dotted white;
+background-color: orange;
+}
 
-   a:nth-child(n){
-    text-decoration: none;
-   }
+p:nth-child(n+1){
+/* background-color: blue; */
+/* text-decoration: none; */
+}
+
+a:nth-child(n){
+text-decoration: none;
+}
+
+
+/* pseudo classes */
+p:active{
+  color: #a46379;
+}
+textarea:active{
+  background-color:black;
+  color: wheat;
+}
+
+a:link{
+  color: color-mix(in srgb, green 50%, brown 50%);
+  
+}
+
+h2:hover{
+  color: darkred;
+}
+
+input:hover,textarea:hover{
+  background-color:black;
+  color: wheat;
+}
+button:hover{
+  background-color: blue;
+  
+}
+
+a:visited{
+  color: gray;
+}
+
+a:hover{
+  color: black;
+}
+
+input:invalid{
+  background-color: pink;
+  border: 1px solid red;
+  color: red;
+}
+input:valid{
+  background-color: rgb(16, 184, 16);
+  border: 1px solid green;
+}
+
+
+/* Pseudo elements */
+h2::after{
+  content: "⟭";
+}
+
+h2::before{
+  content: "⟬";
+}
+
+a[class="showthelink"]::after{
+  content: " ⟬" attr(href) "⟭ ";
+}
+
+#Overview h3+p::first-line{
+  background-color: black;
+}
+
+p::first-letter{
+  background-color: white;
+  font-size: 20px;
+}
+
+/* more than elements & classes.. */
+/* how to apply multiple class to one element, I have size and input-color classes */
+.size{
+  font-size: 25px;
+}
+
+.input-color{
+  color: green;
+}

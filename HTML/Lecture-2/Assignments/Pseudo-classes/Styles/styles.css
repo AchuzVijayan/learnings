@@ -1,0 +1,28 @@
+.article {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  body,h1,div{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .article:nth-child(odd){
+    background-color: #E0CACA;
+  
+  }
+
+  .article:nth-child(even){
+    background-color: #2CEC01;
+  }
+
+  .article:nth-child(3n){
+    border: 1px solid red;
+  }
