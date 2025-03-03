@@ -1,0 +1,58 @@
+div {
+  text-align: center;
+}
+
+div > div{
+    width: 200px;
+    height: 280px;
+    display: inline-block;
+    background-color: rgb(43, 155, 152);
+    border: 5px black solid;
+}
+/*  */
+div#linear > div:first-of-type{
+    background: linear-gradient(#CE3000 30%,blue, #186345 70%);
+}
+
+div#linear > div:nth-of-type(2){
+    background:linear-gradient(to right, red, green);
+}
+
+div#linear > div:last-of-type{
+    background: linear-gradient(60deg, red, green, blue);
+
+}
+/*  */
+div#radial > div:first-of-type{
+    background: radial-gradient(red, blue, green);
+}
+
+div#radial > div:nth-of-type(2){
+    background:radial-gradient(closest-side at 40px 40px, red, blue, green);
+}
+div#radial > div:nth-of-type(3){
+    background:radial-gradient(farthest-side at 40px 40px, red, blue, green);
+}
+div#radial > div:nth-of-type(4){
+    background:radial-gradient(circle at 0%, red, blue, green);
+}
+
+div#radial > div:last-of-type{
+    background:radial-gradient(ellipse at 100%, red,blue, green,white,orange,yellow,violet,black);
+
+}
+
+/*  */
+div#conic > div:first-of-type{
+    background:conic-gradient(red, blue, green,white,orange,yellow,violet,black);
+}
+
+div#conic > div:nth-of-type(2){
+    background:conic-gradient(from 90deg, red, blue, green);
+}
+
+div#conic > div:last-of-type{
+    background: conic-gradient(from 90deg at 10px 20px,red, blue,violet,black);
+
+}
+

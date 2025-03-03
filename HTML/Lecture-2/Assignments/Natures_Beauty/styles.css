@@ -1,0 +1,64 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(#67E9CC,#497CE7);
+    background-repeat: no-repeat;
+}
+
+.container{
+    background-color: rgb(40, 40, 40);
+    margin:50px auto;
+    width: 800px;
+    /* height: 600px; */
+    height: 100%;
+    padding: 50px;
+    padding-top: 30px;
+    border-radius: 5px;
+
+    
+}
+h1{
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #dfd3d3;
+}
+h2{
+    margin: 0;
+}
+
+section{
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 600px;
+    text-align: justify;
+    border-radius: 10px;
+    background-color: blue;
+    filter: drop-shadow(4px 2px 6px #fffdfd);
+    /* filter: invert(10%); */
+}
+
+section:hover{
+    width: 700px;
+    filter: brightness(1);
+    text-align: center;
+    background: linear-gradient( #dfd3d3,#b2509f);
+    border-radius: 500px;
+    filter: drop-shadow(0px 4px 4px  #e7cbf2);
+
+}
+
+.sunset{
+background: linear-gradient(to top right,#525371,#90FFA7 );
+}
+.forest{
+background: linear-gradient(to right, #30bb91,#A7FF79);
+}
+.flower{
+background: radial-gradient(ellipse at 50%,#ac181d, #FACEC3);
+}
+.ocean{
+background: conic-gradient(from 180deg at 50%,#99754d,#eebaa9);
+}
+ 
