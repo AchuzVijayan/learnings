@@ -1,0 +1,101 @@
+header{
+    background-color: rgb(246, 154, 34);
+    color: white;
+    text-align: center;
+    /* position starts */
+    /* position: relative; */
+    position: absolute;
+    /* top: 500px; */
+    right: 20px;
+    /* top: 0px; */
+    bottom: 0px;
+}
+
+h1,h2,h3{
+    margin: 0;
+}
+
+.main-heading{
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 1px;
+
+}
+main{
+    position: absolute;
+
+}
+
+.sub-heads{
+    background-color: gray;
+}
+
+section{
+    display: inline-block;
+    width: 75%;
+}
+
+aside{
+    background-color: gray;
+    display: inline-block;
+    width: 24%;
+    vertical-align: top;
+    
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(4, 15, 18);
+    
+    position: absolute;
+    /* top: 10px; */
+    right: 20px;
+    bottom: 60px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+
+article[id="1"]{
+    position: fixed ;
+    top: 500px;
+    right: 0px;
+}
+
+article[id="2"]{
+    position:absolute ;
+    bottom: 0px;
+    left: 0px;
+}
+
+.headref{
+    position: absolute;
+    top: 10%;
+    left:10%;
+    right: 10%;
+    bottom: 10%;
+}
+
+.main-heading-2{
+    background-color: rgb(144, 41, 41);
+    color: black;
+    position: fixed;
+    top: 500px;
+    right: 20px;
+}
+
+
+.main-heading-3{
+    position: sticky;
+    top: 10px;
+    right: 20px;
+}
