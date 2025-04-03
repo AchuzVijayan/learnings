@@ -1,0 +1,17 @@
+#box {
+  width: 200px;
+  height: 90px;
+  background-color: rgb(0, 239, 95);
+  float: inline-start;
+  margin: 20px;
+  background-color: black;
+}
+
+img {
+  width: 200px;
+  height: 100px;
+  float: inline-start;
+  padding: 20px;
+  background-color: black;
+  margin: 50px;
+}
