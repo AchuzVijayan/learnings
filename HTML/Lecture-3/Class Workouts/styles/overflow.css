@@ -1,0 +1,34 @@
+body{
+    overflow: hidden;
+}
+div{
+  width: 150px;
+  height: 200px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 2px dotted black;
+  background-color: chartreuse;
+}
+
+.visible{
+    overflow: visible;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+.clip{
+    overflow: clip;
+    overflow-clip-margin: 20px;
+}
+
+.scroll{
+    overflow: scroll;
+    overflow-x: scroll;
+}
+
+.auto{
+    overflow: auto;
+}
