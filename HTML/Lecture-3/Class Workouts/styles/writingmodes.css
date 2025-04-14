@@ -1,0 +1,20 @@
+div{
+    display: inline-block;
+    border: 1px dotted black;
+    margin: auto;
+}
+
+.horizontal{
+    writing-mode: horizontal-tb;
+    /* normal */
+
+}
+
+.vertical{
+    /* writing-mode: sideways-rl; */
+    /* not supported in chrome */
+}
+
+.vertical{
+    writing-mode: vertical-lr;
+}
