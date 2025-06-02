@@ -1,0 +1,48 @@
+.divs{
+    width: 200px;
+    height: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+    border: 2px dashed rgb(24, 180, 157);
+}
+#container_div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 408px;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+
+#div1{
+    background-color: rgb(253, 253, 253);
+}
+#div2{
+    background-color: rgb(134, 135, 133);
+}
+#div3{
+    background-color: rgb(15, 16, 15);
+}
+#div4{
+    background-color: rgb(214, 247, 180);
+}
+#div5{
+    background-color: rgb(120, 143, 97);
+}
+#div6{
+    background-color: rgb(49, 59, 39);
+}
+#div7{
+    background-color: rgb(156, 237, 75);
+}
+#div8{
+    background-color: rgb(88, 129, 48);
+}
+#div9{
+    background-color: rgb(43, 73, 12);
+}
+#div10{
+    background-color: rgb(121, 238, 4);
+}
