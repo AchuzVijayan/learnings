@@ -1,0 +1,21 @@
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 5px solid lightslategrey;
+    height: 600px;
+    justify-content: center;
+    align-content: space-evenly;
+}
+
+.box{
+    width: 200px;
+    height: 100px;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(76, 25, 82);
+    text-align: center;
+    margin: 2px;
+    border-radius: 5px;
+    color: chartreuse;
+}

@@ -1,0 +1,56 @@
+div[id^=container]{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 5px solid lightslategrey;
+    height: 400px;
+    justify-content: center;
+    background-color: darkolivegreen;
+}
+
+#container1{
+    align-items: flex-start ;
+}
+#container2{
+    align-items: flex-end;
+}
+#container3{
+    align-items:center ;
+}
+#container4{
+    align-items:baseline ;
+}
+
+#heading{
+    background-color: rgb(20, 141, 141);
+}
+
+.box{
+    width: 200px;
+    height: 100px;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(76, 25, 82);
+    text-align: center;
+    margin: 2px;
+    border-radius: 5px;
+    color: chartreuse;
+}
+
+/* for testing base line */
+
+#box11{
+    height: 150px;
+}
+
+#box22{
+    font-size: 4em;
+}
+
+#box33{
+    height: 50px;
+}
+
+#box44{
+    font-size: xx-small;
+}
