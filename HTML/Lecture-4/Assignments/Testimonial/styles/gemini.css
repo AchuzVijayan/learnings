@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background-color: rgb(198, 193, 193);
+    overflow-x: hidden; /* Keep this to prevent horizontal scrollbar from body */
+    /* Remove font-size from body if you want more control on individual elements */
+    display: flex;
+    flex-direction: column;
+}
+
+#head_container {
+    background: linear-gradient(1deg, rgb(11, 11, 45), rgb(183, 23, 183));
+    width: 100%; /* Use 100% instead of 100vw for better responsiveness */
+    /* Remove min-width: max-content; - This was the main problem for overflow */
+    min-height: 150px; /* Give it a reasonable minimum height to contain text */
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    flex-direction: column; /* Stack h1 and p vertically */
+    /* align-content: center; is for wrapped lines in flex-wrap. Not needed here if flex-direction is column and justify-content is center */
+    align-items: center; /* Centers items along the cross-axis (horizontally in a column flex-direction) */
+    padding: 40px 20px;
+    row-gap: 15px; /* Space between h1 and p */
+    box-sizing: border-box; /* Include padding in the 100% width calculation */
+}
+
+#head_container h1,
+#head_container p {
+    margin: 0;
+    color: antiquewhite;
+    /* Use clamp for fonts inside the head container */
+    font-size: clamp(1.5em, 5vw, 3em); /* Adjust min/vw/max for desired size */
+    line-height: 1.2; /* Better line spacing */
+    word-break: break-word; /* Prevents long words from overflowing on small screens */
+    text-wrap: balance; /* Modern CSS property for better text wrapping */
+}
+
+#head_container p {
+    font-size: clamp(0.8em, 2.5vw, 1.2em); /* Smaller font for paragraph */
+}
+
+
+#main_container {
+    align-self: center; /* Centers the whole main_container within the body */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-around; /* Distributes space around items vertically */
+    /* align-content: center; is for wrapped lines. align-items: center; is for single lines */
+    align-items: center; /* Centers items horizontally within main_container */
+    background-color: aqua;
+    width: 80vw; /* Keep 80vw, or use a max-width if desired */
+    padding: 20px 0; /* Add some vertical padding for content */
+    box-sizing: border-box; /* Include padding in the width/height calculation */
+    gap: 20px; /* Add gap for consistent spacing between testimonial boxes */
+}
+
+/* Change ID to Class for back_container */
+.back_container { /* Renamed from #back_container to .back_container */
+    width: 90%; /* Make width responsive to its parent (main_container) */
+    max-width: 600px; /* Set a max-width for larger screens */
+    height: auto; /* Allow height to adjust based on content */
+    min-height: 100px; /* Ensure a minimum height */
+    background-color: blue;
+    border: 1px solid black;
+    padding: 20px; /* Add padding inside the box */
+    box-sizing: border-box;
+    display: flex; /* Make it a flex container */
+    flex-direction: column; /* Stack content inside vertically */
+    justify-content: center; /* Center content vertically if space allows */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Use class selector for styling odd/even elements */
+.back_container:nth-child(odd) {
+    background-color: blue;
+}
+
+.back_container:nth-child(even) {
+    background-color: rgb(3, 129, 13);
+}
+
+/* Further refinements for inner containers if needed based on content */
+#inner_img_name_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px; /* Space below this section */
+}
+
+.profile_pic {
+    width: 80px; /* Example size */
+    height: 80px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures image covers the area */
+    background-color: #ccc; /* Placeholder */
+}
+
+#content_container {
+    text-align: center;
+    max-width: 500px; /* Restrict content width for readability */
+}
+
+/* Adjust font sizes for content inside boxes */
+.profile_name {
+    font-size: clamp(1em, 3vw, 1.8em);
+    margin: 0;
+    color: white; /* Example color */
+}
+.profile_status {
+    font-size: clamp(0.7em, 2vw, 1em);
+    margin: 0;
+    color: lightgray;
+}
+.first_para, .second_para {
+    font-size: clamp(0.9em, 2.5vw, 1.1em);
+    color: white;
+    margin: 10px 0;
+    line-height: 1.5;
+}
