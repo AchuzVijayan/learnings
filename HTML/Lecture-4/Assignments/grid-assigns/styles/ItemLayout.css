@@ -1,0 +1,16 @@
+.container {
+  background-color: #f0f0f0;
+  display: grid;
+  grid-template-columns: repeat(3,100px);
+  grid-auto-rows: 70px;
+  gap: 50px;
+  justify-content: end;
+  align-items: center;
+}
+
+.item {
+  background-color: rgb(93, 204, 93);
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px dotted black;
+}
