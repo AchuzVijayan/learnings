@@ -1,0 +1,32 @@
+#container {
+  display: grid;
+  width: 80vw;
+  height: 90vh;
+
+  /* setting the number of rows columns and which all should come under particular row which will be set using grid-template-areas */
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 150px 1fr 50px;
+  grid-template-areas: "head head" "nav main" "nav foot";
+}
+
+header {
+  background-color: lightskyblue;
+
+  /* specify the area name */
+  grid-area: head;
+}
+
+nav {
+  background-color: lightgreen;
+  grid-area: nav;
+}
+
+main {
+  background-color: pink;
+  grid-area: main;
+}
+
+footer {
+  background-color: gray;
+  grid-area: foot;
+}
