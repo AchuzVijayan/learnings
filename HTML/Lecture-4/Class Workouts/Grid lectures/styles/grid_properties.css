@@ -88,7 +88,7 @@ body {
 }
 
 
-#outer_container2 #SubContainer1 {
+/* #outer_container2 #SubContainer1 {
   align-items: start;
 }
 
@@ -107,6 +107,6 @@ body {
 
 #outer_container2 #SubContainer5 {
   align-items: stretch;
-}
+} */
 
 
