@@ -1,0 +1,78 @@
+#container {
+  width: 80vw;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 100px 1fr 30px;
+  grid-template-areas: "head head" "nav main" "nav foot";
+}
+
+#header {
+  background-color: lightskyblue;
+  grid-area: head;
+}
+
+#nav {
+  background-color: lightgreen;
+  grid-area: nav;
+}
+
+/* by tutor */
+#main {
+  background-color: pink;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, auto));
+  grid-auto-rows: 100px;
+  justify-content: space-evenly;
+  align-content: center;
+  gap: 10px 20px;
+}
+
+/* mine */
+/* #main {
+  background-color: pink;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 150px);
+  grid-template-areas: "card1 card2 card3" " card4 card5 card6";
+  justify-content: center;
+  align-content: center;
+  gap: 30px 100px;
+} */
+
+.mainitem {
+  grid-area: mainitem;
+}
+
+.cards {
+  background-color: rgb(210, 226, 180);
+  border-radius: 5px;
+  border: 1px solid yellow;
+  text-align: center;
+  padding: 20px;
+}
+/* #card1 {
+  grid-area: card1;
+}
+
+#card2 {
+  grid-area: card2;
+}
+#card3 {
+  grid-area: card3;
+}
+#card4 {
+  grid-area: card4;
+}
+#card5 {
+  grid-area: card5;
+}
+#card6 {
+  grid-area: card6;
+} */
+#footer {
+  background-color: gray;
+  grid-area: foot;
+}
