@@ -1,0 +1,50 @@
+ @font-face {
+    font-family: "ShortBaby";
+    src: url(ShortBaby-Mg2w.ttf);
+}
+body{
+    font-family: "ShortBaby";
+    background-color: #F5F5F5;
+    color: white;
+}
+
+#left_Section{
+    background-color: #020202;
+    position: fixed;
+    width: 10%;
+    height: 98% ;
+    display: grid;
+    justify-items: center;
+    /* padding: 20px; */
+    border-radius: 30px;
+}
+
+#profile_pic{
+    width: 90%;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+#profile_pic h2{
+    margin: 0px;
+}
+
+#profile_pic img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+.fa-solid{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    display: grid;
+}
