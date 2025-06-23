@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Sedan SC";
+    src: url(SedanSC-Regular.ttf);
+}
+
+body{
+    /* font-family: 'Times New Roman', Times, serif; */
+ /* font-family: "Sevillana", cursive;  */
+ font-family: "Sedan SC";
+}
+
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+span{
+    color: blue;
+}
