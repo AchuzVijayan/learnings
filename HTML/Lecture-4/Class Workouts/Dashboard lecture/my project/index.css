@@ -31,7 +31,8 @@ main {
 }
 
 .right_Section {
-  background-color: aqua;
+  background-color: #F5F5F5;
+  border: 1px solid black;
 }
 
 
@@ -76,6 +77,7 @@ main {
     font-family: "Sedan SC";
     color: white;
     margin-bottom:auto;
+    /* margin-bottom: 30px; */
 
         
 
@@ -88,21 +90,60 @@ main {
 
 
 .right_Section{
-    padding: 20px;
-    margin-left: 10px;
+    /* padding: 20px;
+    margin-left: 10px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 header h1{
-    font-size: xx-large;
-    font-weight: bolder;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 10px 0px 0px 50px;
 }
 #search{
-    height: 20px;
+    margin-right: 2%;
+    margin-top: 11px;
+    height: 25px;
+    width: 200px;
     border-radius: 10px;
-    border: 2px solid green;
+    border: 0px solid white;
+  
+}
+
+#search:active{
+      border: 2px solid green;
+      /* column-fill: "search"; */
+}
+
+
+/* article{
+    background-color: black;
+    height: 400px;
+    margin: 20px;
+} */
+
+#dashboard{
+    background-color: #FFFFFF;
+    padding-left: 10px;
+    border-radius: 40px;
+    margin: auto;
+    box-sizing: border-box;
+    /* height: 500px; */
+}
+
+#dashboard img{
+    width: 99%;
+        border-radius: 40px;
+    height: auto;
+    box-sizing: border-box;
+    
+        
 }
