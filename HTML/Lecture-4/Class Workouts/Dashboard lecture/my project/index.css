@@ -3,7 +3,6 @@
   src: url(ShortBaby-Mg2w.ttf);
 }
 
-
 body {
   font-family: "Sedan SC";
   background-color: #f5f5f5;
@@ -31,16 +30,15 @@ main {
 }
 
 .right_Section {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   border: 1px solid black;
 }
 
-
-#profile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
 }
 #profile_picture {
   width: 80%;
@@ -48,115 +46,216 @@ main {
   border-radius: 50%;
 }
 
-#profile h2{
-    font-size: 20px;
-    color: rgb(250, 249, 247);
-    font-weight: bolder;
-    font-family: "sedan sc";
+#profile h2 {
+  font-size: 20px;
+  color: rgb(250, 249, 247);
+  font-weight: bolder;
+  font-family: "sedan sc";
 }
 
-.nav> a{
-    text-decoration: none;
-    color: white;
-    padding-left: 20px;
-    font-weight: 500;
-    font-size: 16px;
+.nav > a {
+  text-decoration: none;
+  color: white;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
-
-.nav:hover{
-    color: yellow;
+.nav:hover {
+  color: yellow;
 }
 
-
-.nav{
-    display: flex;
-    margin-left: 30px;
-    padding-right: 20px;
-    justify-content: flex-start;
-    font-family: "Sedan SC";
-    color: white;
-    margin-bottom:auto;
-    /* margin-bottom: 30px; */
-
-        
-
+.nav {
+  display: flex;
+  margin-left: 30px;
+  padding-right: 20px;
+  justify-content: flex-start;
+  font-family: "Sedan SC";
+  color: white;
+  margin-bottom: auto;
+  /* margin-bottom: 30px; */
 }
 
-
-.nav>a:hover{
-    color: rgb(68, 177, 75);
+.nav > a:hover {
+  color: rgb(68, 177, 75);
 }
 
-
-.right_Section{
-    /* padding: 20px;
+.right_Section {
+  /* padding: 20px;
     margin-left: 10px; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.arti{
+    width: 80%;
+    margin: auto;
+    
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+header h1 {
+  font-size: 35px;
+  font-weight: 700;
+  margin: 10px 0px 0px 5%;
+}
+#search {
+  margin-right: 5%;
+  margin-top: 11px;
+  height: 25px;
+  width: 200px;
+  border-radius: 10px;
+  border: 0px solid white;
+}
+
+#search:focus {
+  outline: 2px solid rgb(26, 183, 26);
+  text-transform: lowercase;
+}
+#search::placeholder {
+  color: rgb(128, 127, 127);
+  font-size: small;
+}
+
+#dashboard {
+  background-color: #ffffff;
+  width: 80%;
+  padding: 10px;
+  border-radius: 40px;
+  margin: auto;
+  box-sizing: border-box;
+  margin-bottom: 80px;
+
+}
+
+
+#imgg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+
+#datas{
+
+    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-header h1{
-    font-size: 35px;
-    font-weight: 700;
-    margin: 10px 0px 0px 5%;
-}
-#search{
-    margin-right: 5%;
-    margin-top: 11px;
-    height: 25px;
-    width: 200px;
-    border-radius: 10px;
-    border: 0px solid white;
-  
-}
-
-#search:focus{
-      outline: 2px solid rgb(26, 183, 26);
-      text-transform: lowercase;
-
-}
-#search::placeholder{
-    color: rgb(128, 127, 127);
-    font-size: small;
-}
-
-
-
-/* article{
-    background-color: black;
-    height: 400px;
-    margin: 20px;
-} */
-
-#dashboard{
-    background-color: #ffffff;
     width: 80%;
-    padding: 10px;
-    border-radius: 40px;
+}
+
+#dashdata{
+    display: flex;
+    justify-content: space-around;
+}
+#dashdata h2{
+    /* font-family: "ShortBaby"; */
+    text-decoration: underline;
+    /* background-color: blue; */
+}
+
+#dataconatiner_main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    margin-top: 20px;
+    margin-bottom: 80px;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.card{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    width: 200px;
     margin: auto;
-    /* box-sizing: border-box; */
-    /* height: 500px; */
+    padding: 20px 10px 20px 10px;
 }
 
-#activity{
-    /* margin-top: 20px; */
+.card h3:nth-child(even){
+ 
+    font-family: "ShortBaby";
+       margin: 0px;
+       font-weight: lighter;
+
 }
 
-#imgg img{
+.card h3:last-child{
+ 
+    font-family: 'Times New Roman', Times, serif;
+       margin: 0px;
+       /* font-weight: lighter; */
+
+}
+
+.card > .fa-solid{
+    align-self: end;
+}
+
+#card1{
+    background-color: #bce7c1;
+}
+
+#card2{
+    background-color: #eadac0;
+}
+#card3{
+    background-color: #edc6c6;
+}
+#card4{
+    background-color: #cdcfec;
+}
+
+.card:hover{
+    background: radial-gradient(rgb(243, 164, 164), rgb(124, 124, 232));
+}
+
+#dashdata h2:hover, #users h2:hover{
+    font-size: 35px;
+    transition-duration: 1.5s;
+}
+
+
+#users h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+table{
     width: 100%;
-    height: 100%;
-        border-radius: 40px;
-        object-fit: cover;
-    /* box-sizing: border-box; */
-    
-        
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    border-collapse: collapse;
 }
+
+th{
+    font-size: 20px;
+    padding: 20px;
+    background-color: #A49798;
+}
+
+td{
+    font-size: 18px;
+    padding: 10px;
+}
+tr:nth-child(even){
+    background-color: beige;
+}
+
+tr:nth-child(odd){
+    background-color: white;
+}
+
