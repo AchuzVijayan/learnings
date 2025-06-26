@@ -88,10 +88,9 @@ main {
   gap: 20px;
 }
 
-.arti{
-    width: 80%;
-    margin: auto;
-    
+.arti {
+  width: 80%;
+  margin: auto;
 }
 header {
   display: flex;
@@ -132,9 +131,7 @@ header h1 {
   margin: auto;
   box-sizing: border-box;
   margin-bottom: 80px;
-
 }
-
 
 #imgg img {
   width: 100%;
@@ -144,118 +141,118 @@ header h1 {
   box-sizing: border-box;
 }
 
-
-#datas{
-
-    /* background-color: aqua; */
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+#datas {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
 
-#dashdata{
-    display: flex;
-    justify-content: space-around;
+#dashdata {
+  display: flex;
+  justify-content: space-around;
 }
-#dashdata h2{
-    /* font-family: "ShortBaby"; */
-    text-decoration: underline;
-    /* background-color: blue; */
-}
-
-#dataconatiner_main{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    margin-top: 20px;
-    margin-bottom: 80px;
-    justify-content: center;
-    gap: 40px;
-
+#dashdata h2 {
+  /* font-family: "ShortBaby"; */
+  text-decoration: underline;
+  /* background-color: blue; */
 }
 
-.card{
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    width: 200px;
-    margin: auto;
-    padding: 20px 10px 20px 10px;
+#dataconatiner_main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 20px;
+  margin-bottom: 80px;
+  justify-content: center;
+  gap: 40px;
 }
 
-.card h3:nth-child(even){
- 
-    font-family: "ShortBaby";
-       margin: 0px;
-       font-weight: lighter;
-
+.card {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  width: 200px;
+  margin: auto;
+  padding: 20px 10px 20px 10px;
 }
 
-.card h3:last-child{
- 
-    font-family: 'Times New Roman', Times, serif;
-       margin: 0px;
-       /* font-weight: lighter; */
-
+.card h3:nth-child(even) {
+  font-family: "ShortBaby";
+  margin: 0px;
+  font-weight: lighter;
 }
 
-.card > .fa-solid{
-    align-self: end;
+.card h3:last-child {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0px;
+  /* font-weight: lighter; */
 }
 
-#card1{
-    background-color: #bce7c1;
+.card > .fa-solid {
+  align-self: end;
 }
 
-#card2{
-    background-color: #eadac0;
-}
-#card3{
-    background-color: #edc6c6;
-}
-#card4{
-    background-color: #cdcfec;
+#card1 {
+  background-color: #bce7c1;
 }
 
-.card:hover{
-    background: radial-gradient(rgb(243, 164, 164), rgb(124, 124, 232));
+#card2 {
+  background-color: #eadac0;
+}
+#card3 {
+  background-color: #edc6c6;
+}
+#card4 {
+  background-color: #cdcfec;
 }
 
-#dashdata h2:hover, #users h2:hover{
-    font-size: 35px;
-    transition-duration: 1.5s;
+.card:hover {
+  background: radial-gradient(rgb(243, 164, 164), rgb(124, 124, 232));
+}
+
+#dashdata h2:hover,
+#users h2:hover {
+  font-size: 35px;
+  transition-duration: 1.5s;
+}
+
+#users h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  border-collapse: collapse;
+  border-radius: 20px;
+  background-color: white;
+}
+
+th {
+  font-size: 20px;
+  padding: 20px;
+  background-color: #a49798;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 15px 100px;
+}
+td {
+  font-size: 18px;
+}
+tbody tr:nth-child(even) {
+  background-color: beige;
 }
 
 
-#users h2{
-    text-align: center;
-    text-decoration: underline;
+tbody tr:hover {
+  background-color: #eaeaec;
 }
 
-table{
-    width: 100%;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 80px;
-    border-collapse: collapse;
-}
-
-th{
-    font-size: 20px;
-    padding: 20px;
-    background-color: #A49798;
-}
-
-td{
-    font-size: 18px;
-    padding: 10px;
-}
-tr:nth-child(even){
-    background-color: beige;
-}
-
-tr:nth-child(odd){
-    background-color: white;
-}
 
