@@ -10,9 +10,12 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
@@ -21,56 +24,66 @@
           <img id="profile_picture" src="man.jpg" alt="" />
           <h2>John Doe</h2>
         </div>
-        
-        <div class="nav" id="nav1"><i class="fa-solid fa-list-ul"></i><a href="#dashboard">Dashboard</a></div>
-        <div class="nav" id="nav2"><i class="fa-solid fa-tags"></i><a href="#datas">Data</a></div>
-        <div class="nav" id="nav3"><i class="fa-solid fa-user"></i><a href="#users">Users</a></div>
-        <div class="nav" id="nav4"><i class="fa-solid fa-calendar-days"></i><a href="#schedule">Schedule</a></div>
-        <div class="nav" id="nav5"><i class="fa-solid fa-gear"></i><a href="#contact">Contact</a></div>
+
+        <div class="nav" id="nav1">
+          <i class="fa-solid fa-list-ul"></i><a href="#dashboard">Dashboard</a>
+        </div>
+        <div class="nav" id="nav2">
+          <i class="fa-solid fa-tags"></i><a href="#datas">Data</a>
+        </div>
+        <div class="nav" id="nav3">
+          <i class="fa-solid fa-user"></i><a href="#users">Users</a>
+        </div>
+        <div class="nav" id="nav4">
+          <i class="fa-solid fa-calendar-days"></i
+          ><a href="#schedule">Schedule</a>
+        </div>
+        <div class="nav" id="nav5">
+          <i class="fa-solid fa-gear"></i><a href="#contact">Contact</a>
+        </div>
       </section>
 
       <section class="right_Section">
         <header>
-            <h1>DashBoard</h1>
-            <input type="text" placeholder="Search..." id="search">
+          <h1>DashBoard</h1>
+          <input type="text" placeholder="Search..." id="search" />
         </header>
         <article class="arti" id="dashboard">
-            <div id="activity">
-                <h2>Activities</h2>
-                <h3>May-June 2024</h3>
-            </div>
-            <div id="imgg">
-                <img src="BarGraph.png" alt="">
-            </div>
+          <div id="activity">
+            <h2>Activities</h2>
+            <h3>May-June 2024</h3>
+          </div>
+          <div id="imgg">
+            <img src="BarGraph.png" alt="" />
+          </div>
         </article>
         <article class="arti" id="datas">
           <div id="dashdata">
-              <h2>Dashboard Data</h2>
+            <h2>Dashboard Data</h2>
           </div>
           <div id="dataconatiner_main">
-            <div class="card" id="card1"><i class="fa-solid fa-dollar-sign"></i>
-            <h3>Total Revenue</h3>
-            <h3>$456,553,563</h3>
-
+            <div class="card" id="card1">
+              <i class="fa-solid fa-dollar-sign"></i>
+              <h3>Total Revenue</h3>
+              <h3>$456,553,563</h3>
             </div>
-            <div class="card" id="card2"><i class="fa-solid fa-tag"></i>
+            <div class="card" id="card2">
+              <i class="fa-solid fa-tag"></i>
               <h3>Total Transactions</h3>
               <h3>1,450</h3>
-
             </div>
-            <div class="card" id="card3"><i class="fa-solid fa-thumbs-up"></i>
+            <div class="card" id="card3">
+              <i class="fa-solid fa-thumbs-up"></i>
               <h3>Total Likes</h3>
               <h3>1,234</h3>
-
             </div>
-            <div class="card" id="card4"><i class="fa-solid fa-user"></i>
+            <div class="card" id="card4">
+              <i class="fa-solid fa-user"></i>
               <h3>Total Users</h3>
               <h3>856</h3>
-
             </div>
           </div>
         </article>
-
 
         <article class="arti" id="users">
           <h2>User Interactions</h2>
@@ -80,43 +93,42 @@
                 <th>Month</th>
                 <th>Number of Users</th>
               </tr>
-              <tbody>
-                <tr>
-                  <td>January</td>
-                  <td>1000</td>
-                </tr>
-                <tr>
-                  <td>February</td>
-                  <td>1200</td>
-                </tr>
-                <tr>
-                  <td>March</td>
-                  <td>1500</td>
-                </tr>
-                <tr>
-                  <td>April</td>
-                  <td>1250</td>
-                </tr>
-                <tr>
-                  <td>May</td>
-                  <td>1600</td>
-                </tr>
-                
-              </tbody>
             </thead>
+            <tbody>
+              <tr>
+                <td>January</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>February</td>
+                <td>1200</td>
+              </tr>
+              <tr>
+                <td>March</td>
+                <td>1500</td>
+              </tr>
+              <tr>
+                <td>April</td>
+                <td>1250</td>
+              </tr>
+              <tr>
+                <td>May</td>
+                <td>1600</td>
+              </tr>
+            </tbody>
           </table>
         </article>
-
-
 
         <article class="arti" id="schedule">
           <div id="schedule_header">
             <h2>Today's Schedule</h2>
-            <h4>See All</h4>
+            <h4><a href="#">See All</a></h4>
           </div>
           <div id="schedule_details">
             <div class="sche_con" id="sche_1">
-              <h3 class="detail_head">Meetings from suppliers from Kutta Bali</h3>
+              <h3 class="detail_head">
+                Meetings from suppliers from Kutta Bali
+              </h3>
               <h5 class="timeings">14:00-15:00</h5>
               <h4 class="location_details">At Sunset road Kutta Bali</h4>
             </div>
@@ -131,7 +143,9 @@
               <h4 class="location_details">At Sunset road</h4>
             </div>
             <div class="sche_con" id="sche_4">
-              <h3 class="detail_head">Meetings from suppliers from Encoprice</h3>
+              <h3 class="detail_head">
+                Meetings from suppliers from Encoprice
+              </h3>
               <h5 class="timeings">02:00-03:00</h5>
               <h4 class="location_details">At Morning on Shona road</h4>
             </div>
@@ -148,23 +162,43 @@
           </div>
         </article>
 
-
         <article class="arti" id="contact">
-            <h2>Contact Details</h2>
-            <div class="main_container_contact">
-              <div class="sub_contact" id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.4440058106!2d76.89714478399208!3d28.527297863274757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1751017067887!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-              <div class="sub_contact" id="feedback">
-                <h3>Feedback</h3>
-                <input type="text" placeholder="Your Name"  id="name">
-                <input type="email" placeholder="Your Email" id="email">
-                <textarea name="feedback" id="feedbackresponse" placeholder="Your Feedback" rows="10"></textarea>
-                <button type="submit" value="submit">Submit Feedback</button>
-              </div>
+          <h2>Contact Details</h2>
+          <div class="main_container_contact">
+            <div class="sub_contact" id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.4440058106!2d76.89714478399208!3d28.527297863274757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1751017067887!5m2!1sen!2sin"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
+            <div class="sub_contact" id="feedback">
+              <h3>Feedback</h3>
+              <form>
+                <input type="text" placeholder="Your Name" id="name" required />
+                <input type="email" placeholder="Your Email" id="email" required />
+                <textarea
+                  name="feedback"
+                  id="feedbackresponse"
+                  placeholder="Your Feedback"
+                  rows="10"
+                  required
+                ></textarea>
+                <button type="submit" value="submit">Submit Feedback</button>
+              </form>
+            </div>
+          </div>
         </article>
-        <footer></footer>
+        <footer>
+          <div id="socials">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <h3>&copy; 2025 Code With Sree. All Rights Reserved.</h3>
+        </footer>
       </section>
     </main>
   </body>
