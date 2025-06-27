@@ -295,6 +295,13 @@ tbody tr:hover {
 
 .sche_con >h4,h5{
   color: gray;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sche_con >h3{
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .sche_con:nth-child(odd){
