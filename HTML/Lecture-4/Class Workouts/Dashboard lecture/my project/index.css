@@ -260,14 +260,47 @@ tbody tr:hover {
   background-color: white;
   border-radius: 30px;
   padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 80px;
 }
 
 #schedule_header{
   display: flex;
   padding: 10px;
   justify-content: space-between;
+  align-items: center;
+}
+
+#schedule_header >h2{
+  margin-bottom: 0px;
 }
 
 #schedule_details{
-  
+  width: 98%;
+  padding: 10px;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.sche_con{
+  height: 60px;
+  border-left: 5px solid black;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.sche_con >h3,h4,h5{
+  margin: 0px;
+}
+
+.sche_con >h4,h5{
+  color: gray;
+}
+
+.sche_con:nth-child(odd){
+   border-left: 5px solid rgb(116, 231, 116);
+}
+
+.sche_con:nth-child(even){
+   border-left: 5px solid rgb(144, 144, 250);
 }
