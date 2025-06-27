@@ -256,3 +256,18 @@ tbody tr:hover {
 }
 
 
+#schedule{
+  background-color: white;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+#schedule_header{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+#schedule_details{
+  
+}
