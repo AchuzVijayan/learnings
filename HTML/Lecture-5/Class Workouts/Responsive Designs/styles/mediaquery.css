@@ -1,0 +1,44 @@
+#div1{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+}
+
+#text{
+    column-count: 3;
+    width: 90%;
+    margin: auto;
+}
+
+p{
+    margin: 0;
+}
+
+
+/* Range methode I */
+/* 780 or less & 680 or more */
+/* @media screen  and (min-width:680px) and (max-width:780px){ */
+
+/* Range methode II*/
+/* 780 or less & 680 or more */
+/* @media  screen  and (680px<= width<= 780px){
+    #div1{
+        background-color: black;
+    }
+    #text{
+        column-count: 2;
+        background-color: blueviolet;
+        color: white;
+    }
+} */
+/* 540 or less */
+@media screen and (max-width:540px){
+        #div1{
+        background-color: yellow
+    }
+    #text{
+        column-count: 1;
+        background-color: orange;
+        color: black;
+    }
+}
