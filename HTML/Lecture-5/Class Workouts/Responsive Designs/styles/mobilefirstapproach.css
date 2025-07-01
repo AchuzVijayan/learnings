@@ -1,0 +1,49 @@
+#div1 {
+  width: 100%;
+  height: 300px;
+  background-color: green;
+}
+
+#text {
+  column-count: 1;
+  width: 90%;
+  margin: auto;
+  word-break: break-all;
+}
+
+p {
+  margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+  #div1 {
+    background-color: yellow;
+  }
+  #text {
+    column-count: 2;
+    background-color: orange;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  #div1 {
+    background-color: rgb(174, 0, 255);
+  }
+  #text {
+    column-count: 3;
+    background-color: rgb(29, 27, 24);
+    color: rgb(196, 167, 167);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #div1 {
+    background-color: rgb(56, 72, 252);
+  }
+  #text {
+    column-count: 5;
+    background-color: rgb(113, 79, 29);
+    color: rgb(0, 0, 0);
+  }
+}

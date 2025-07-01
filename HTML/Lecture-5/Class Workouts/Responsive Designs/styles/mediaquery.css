@@ -17,11 +17,11 @@ p{
 
 /* Range methode I */
 /* 780 or less & 680 or more */
-/* @media screen  and (min-width:680px) and (max-width:780px){ */
+@media screen  and (max-width:780px) and (min-width:680px){
 
 /* Range methode II*/
 /* 780 or less & 680 or more */
-/* @media  screen  and (680px<= width<= 780px){
+/* @media  screen  and (680px<= width<= 780px){ */
     #div1{
         background-color: black;
     }
@@ -30,7 +30,7 @@ p{
         background-color: blueviolet;
         color: white;
     }
-} */
+}
 /* 540 or less */
 @media screen and (max-width:540px){
         #div1{
