@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="site-logo">My App</div>
+
+        <details class="mobile-menu-container">
+            <summary class="hamburger-icon-wrapper">
+                <i class="fa-solid fa-bars"></i>
+            </summary>
+
+            <nav class="navbar" id="main-nav">
+                <div class="nav" id="nav1">
+                    <i class="fa-solid fa-list-ul"></i><a href="#dashboard">Dashboard</a>
+                </div>
+                <div class="nav" id="nav2">
+                    <i class="fa-solid fa-tags"></i><a href="#datas">Data</a>
+                </div>
+                <div class="nav" id="nav3">
+                    <i class="fa-solid fa-user"></i><a href="#users">Users</a>
+                </div>
+                <div class="nav" id="nav4">
+                    <i class="fa-solid fa-calendar-days"></i><a href="#schedule">Schedule</a>
+                </div>
+                <div class="nav" id="nav5">
+                    <i class="fa-solid fa-gear"></i><a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </details>
+
+        <nav class="desktop-nav">
+            <div class="nav" id="nav-d1">
+                <i class="fa-solid fa-list-ul"></i><a href="#dashboard">Dashboard</a>
+            </div>
+            <div class="nav" id="nav-d2">
+                <i class="fa-solid fa-tags"></i><a href="#datas">Data</a>
+            </div>
+            <div class="nav" id="nav-d3">
+                <i class="fa-solid fa-user"></i><a href="#users">Users</a>
+            </div>
+            <div class="nav" id="nav-d4">
+                <i class="fa-solid fa-calendar-days"></i><a href="#schedule">Schedule</a>
+            </div>
+            <div class="nav" id="nav-d5">
+                <i class="fa-solid fa-gear"></i><a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section style="padding: 20px;">
+            <h2>Welcome! Resize your browser to see the navigation change.</h2>
+            <p>This is the main content area.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* General Body and Box Sizing */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+.site-header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Needed for positioning mobile menu */
+}
+
+.site-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Nav Item Styling (common for both mobile and desktop) */
+.nav {
+    padding: 10px 15px;
+    display: flex; /* To align icon and text */
+    align-items: center;
+}
+
+.nav i {
+    margin-right: 10px;
+    color: #ddd; /* Lighter icon color */
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #f0f0f0;
+}
+
+/* --- Desktop Navigation Styles (Default/Larger Screens) --- */
+.desktop-nav {
+    display: flex; /* Show as horizontal grid/row */
+    gap: 20px; /* Space between items */
+    list-style: none; /* In case you use ul/li */
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-nav .nav:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Hide the mobile menu container by default on larger screens */
+.mobile-menu-container {
+    display: none;
+}
+
+/* Hide the default details marker */
+summary::-webkit-details-marker {
+    display: none;
+}
+summary::marker {
+    display: none;
+}
+
+/* Style the hamburger icon wrapper */
+.hamburger-icon-wrapper {
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 5px; /* Add some padding around the icon for easier clicking */
+    display: flex; /* To center the icon if needed */
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-icon-wrapper i {
+    color: white; /* Color of the hamburger icon */
+}
+
+/* --- Mobile Navigation Styles (via Media Query) --- */
+@media (max-width: 768px) { /* Adjust this breakpoint as needed */
+
+    /* Hide desktop nav on small screens */
+    .desktop-nav {
+        display: none;
+    }
+
+    /* Show mobile menu container on small screens */
+    .mobile-menu-container {
+        display: block; /* Or flex, depending on header layout */
+    }
+
+    /* Style the dropdown navbar itself */
+    .navbar { /* This is the div with class="navbar" inside <details> */
+        display: none; /* Hidden by default */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Position relative to .site-header */
+        top: 100%; /* Place it right below the header */
+        left: 0;
+        width: 100%;
+        background-color: #444; /* Slightly different background for dropdown */
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1000; /* Ensure it's above other content */
+        padding: 0; /* Remove default padding from ul/div */
+        margin: 0; /* Remove default margin */
+    }
+
+    .navbar .nav {
+        border-bottom: 1px solid #555; /* Separator for mobile links */
+    }
+
+    .navbar .nav:last-child {
+        border-bottom: none; /* No border for the last item */
+    }
+
+    .navbar .nav:hover {
+        background-color: #666;
+    }
+
+    /* When the details is open, make the navbar visible */
+    details[open] > .navbar {
+        display: flex; /* Show the dropdown menu */
+    }
+}
