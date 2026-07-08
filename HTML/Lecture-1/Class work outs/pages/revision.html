@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        #list_ul{
+            list-style: armenian inside ;
+        }
+
+        header p{
+            /* header space p means all the p tags under header will be styled */
+            /* font-family: Impact;
+            color: rgb(255,255,87); */
+        }
+
+        header > h3{
+            /* font-size: xx-large;
+            color: aqua; */
+        }
+
+        h3 + p{
+            /* color: red; */
+        }
+
+        p+ h4 ~ p{
+            color: rgb(13, 250, 92);
+        } 
+
+        .outest .outer .inner .innermost button{
+            background-color: black;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+    <form action="" method="get">
+        <fieldset>
+            <legend>Fill the form</legend>
+    <!-- just adding inputs -->
+
+    <!-- selecting gender (only allow to select one)-->
+
+    <p>Select Your Gender : RADIO BUTTON TESTING </p>
+<br>
+    <input type="radio" id="Male" value="M" name="gen">
+    <label for="Male">Male</label>
+
+    <br>
+    <input type="radio" id="Female" value="F" name="gen">
+    <label for="Female">Female</label>
+<br>
+<br><br> 
+    <!-- selecting hobbies (multiple selection availabe) -->
+
+    <p> Which of the below are Animals? </p>
+    <br>
+    <input type="checkbox" id="A" name="Hob" value="Elephant">
+    <label for="A">1. Elephant</label>
+
+    <input type="checkbox" name="Hob" id="B" disabled value="Lion" checked>
+    <label for="B">Lion</label>
+
+    <input type="checkbox" name="Hob" id="C" value="Plastic">
+    <label for="C">Plastic</label>
+
+    <button type="submit"> Save</button>
+
+    <br><br>
+
+    <p>What is my Name? </p>
+    <input type="radio" name="NAME_of_Me" id="opt_a">
+    <label for="opt_a">Sarala</label>
+    <input type="radio" name="NAME_of_Me" id="opt_b">
+    <label for="opt_b">Vijayan</label>
+    <input type="radio" name="NAME_of_Me" id="opt_c">
+    <label for="opt_c">Aswathy</label>
+    <input type="radio" name="NAME_of_Me" id="opt_d">
+    <label for="opt_d">Akash</label>
+
+
+</fieldset>
+
+<Fieldset>
+    <legend>Select Education multiple selection</legend>
+    <label for="ed">Academics</label>
+    <select name="Educ" id="ed" multiple >
+        <optgroup label="Highschool">
+            <option value="8">8th</option>
+            <option value="9">9th</option>
+            <option value="10">10th</option>
+        </optgroup>
+        <optgroup label="highersecondary">
+            <option value="+1">plus one</option>
+            <option value="+2">plus two</option>
+        </optgroup>
+    </select>
+
+
+</Fieldset>
+  <legend>Select Education</legend>
+    <label for="ed1">Academics</label>
+    <select name="Educat" id="edu1" > Education
+        <option value="+1">plus one</option>
+        <option selected value="+2">plus two</option>
+    </select>
+
+<button type="reset">
+    <img src="../../../../../Mutlimedia/home.png" height="10px" alt="Img Not available">
+</button>
+<br>
+<br>
+<label for="picture"> upload profile picture :  </label>
+<input type="file" name="profilepic" id="picture" accept="img/png">
+
+
+<br>
+<br>
+<button type="submit">Submit</button>
+</form>
+
+<div>
+    <ul id="list_ul">
+        <li>Aswathy</li>
+        <li>Aswathy</li>
+        <li>Aswathy</li>
+        <li>Aswathy</li>
+    </ul>
+
+    <ol id="list_ol">
+        <li>Aswathy</li>
+        <li>Aswathy</li>
+        <li>Aswathy</li>
+        <li>Aswathy</li>
+        <li>Aswathy</li>
+
+    </ol>
+
+    <dl>
+        <dt>Aswathy</dt>
+        <dt>Software developer</dt>
+        <address>Akash bhavan uliyanand karamcode po kollam 691579</address>
+        <dd>Aswathy is a software developer with 3.5 years of experience in java development and support</dd>
+        <dd>She has exceptional knowledge on everything</dd>
+        <dd>she is from kerala and also the founder of <em><strong>Zenzilth Technologies</strong></em> </dd>
+    </dl>
+</div>
+
+<h2>Descended Combinator- select all mentioned tags under the left one</h2>
+<header>
+    <h3>First child of header h3</h3>
+    <p>second child  of header p</p>
+    <a href="../pages/about.html">3rd child of header a </a>
+    <p>4th child of header p</p>
+    <h4>5th child of header</h4>
+    <div><h3>indirect child of header and direct child of div h3</h3><p> direct second child of div  </p></div>
+    <h3>7th direct - child header h3</h3>
+    <a href="../pages/Booking.html">8th direct child of header a</a>
+    <p>last direct child of header p</p>
+</header>
+
+<div class="outest">
+    <div class="outer">
+        <div class="inner">
+            <div class="innermost">
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
